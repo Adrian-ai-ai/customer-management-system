@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/6961642eda.js" crossorigin="anonymous"></script>
+        <title>Meta-Cleaner</title>
+    </head>
+    <body onload="showtable(array)">
+        <nav>
+            <header>
+                <h1>Meta-cleaner</h1>
+            </header>
+        </nav>
+        <div class='table'>
+            <form action="" method="post" class="searchform">
+                <label for="search" class="search">Search by cell number or Id:
+                    <input name='search' id='search'type="search" placeholder="Live searching..." >
+                </label>
+                <h3 id='error' >
+
+                </h3>
+                <h3 id="msg"></h3>
+            </form>
+            <div class="adddiv">
+                <button id="addbtn" onclick="create()">Add user +</button>
+            </div>
+            <table id='mytable'>
+               
+            </table>
+            
+            <fieldset id="fieldset" class='createfield'>
+                <legend>create user</legend>
+                
+                <form action="" method="post" class = 'metadata'>
+                    <label for="firstname">First Name
+                        <input class='fname'type="text" for ='firstname' name="firstname" id="firstname" placeholder="Enter First Name" > 
+                    </label>
+                    
+                    <label for="lastname">Last Name<input class='lname'type="text" for ='lastname' name="lastname" id="lastname" placeholder="Enter Last Name" ></label>
+                    
+                    <label for="nrc">NRC<input class='nrc'type="id" for ='nrc' name="nrc" id="nrc" placeholder="Enter National ID"></label>
+                    
+                    <label for="phonenumber">Phone Number<input class='phone'type="tel" for ='phonenumber' name="phonenumber" id="phonenumber"placeholder="Enter phone number"></label>
+
+                    <label for="gender">gender<input class='gender' type="text" for ='gender' name="gender" id="gender"></label>
+                    
+                    <label for="dob">Date of birth<input class='dateofbirth' type="date" for ='dob' name="dob" id="dob"></label>
+                    
+                    <label for="pob">place of birth <input class='placeofbirth'type="text" for ='pob' name="pob" id="pob" placeholder="Enter place of birth"></label>
+                    
+                    <label for="homeaddress">Residential Address<input  class='address'type="text" for ='homeaddress' name="homeaddress" id="homeaddress"placeholder="Enter residential address"></label>
+                    
+                    <div class="creatediv">
+                        <button type='button'id="createbtn" onclick="add()">Create</button>
+                    </div>
+                </form>
+                
+            </fieldset>
+           
+        <div class='subscriberform'>
+            <div class ='article'>
+                <div class="glider">
+                    <input type="radio" name="slide" id="glide-1" checked>
+                    <input type="radio" name="slide" id="glide-2">
+                    <input type="radio" name="slide" id="glide-3">
+                    
+                <div class ='glides'>
+                      <div class="glide glide-1">
+                        <img src="" alt="subscriber form">
+                      </div>
+                        <div class="glide glide-2">
+                            <img src="" alt="National Id">
+                          </div>
+                        <div class="glide glide-3">
+                            <img src="" alt="Live photo">
+                        </div>
+                </div>
+            
+                    <div class="arrows arrow-left">
+                        <label for=""><i class="fa-solid fa-less-than"></i></label>
+                        <label for="glide-1"><i class="fa-solid fa-less-than"></i></label>
+                        <label for="glide-2"><i class="fa-solid fa-less-than"></i></label>
+                    </div>
+                    <div class="arrows arrow-right">
+                        <label for="glide-2"><i class="fa-solid fa-greater-than"></i></label>
+                        <label for="glide-3"><i class="fa-solid fa-greater-than"></i></label>
+                        <label for=""><i class="fa-solid fa-greater-than"></i></label>
+                    </div>
+            
+                    <div class="dots">
+                        <label for="glide-1"></label>
+                        <label for="glide-2"></label>
+                        <label for="glide-3"></label>
+                    </div>
+                  </div>
+            </div>
+                
+                <form action="" method="post" class = 'metadata'>
+                    <label for="firstname">First Name
+                        <input type="text" for ='firstname' name="firstname" id="ufirstname">
+                    </label>
+                   
+                    <label for="lastname">Last Name<input type="text" for ='lastname' name="lastname" id="ulastname"></label>
+
+                    <label for="gender">gender<input class='gender' type="text" for ='gender' name="gender" id="ugender"></label>
+
+                    <label for="nrc">NRC<input type="number" for ='nrc' name="nrc" id="unrc"></label>
+                    <label for="phonenumber">Phone Number<input type="tel" for ='phonenumber' name="phonenumber" id="uphonenumber"></label>
+                    <label for="dob">Date of birth<input type="date" for ='dob' name="dob" id="udob"></label>
+                    <label for="pob">place of birth <input type="text" for ='pob' name="pob" id="upob"></label>
+                    <label for="homeaddress">Residential Address<input type="text" for ='homeadress' name="homeaddress" id="uhomeaddress"></label>
+                    <button type="button"  id='reset'>Reject</button>
+                    <button type="button"  id='submit' class='updatebtn' onclick='update()'>Update</button>
+                    
+                </form>
+                
+        </div>
+        
+        </div>
+        
+        
+        <script src='index.js'></script>
+    </body>
+</html>
+
